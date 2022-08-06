@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/la...">
+<head>
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/hello.css}"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="mensagem" class="mensagem"><h1>Nos informe a vaga</h1></div>
+	<div id="menuregistro">
+            <div id="tabelaregistro" class="tabelaregistro">
+                    Modelo do veiculo: <input type="text" id="modelo" class="input1" />  <br><br>
+                    Placa do veiculo: <input type="text" id="placa" class="input2" /><br><br>
+                    Cor do veiculo:  <input type="text" id="cor" class="input3" /><br><br>
+                    Propietario do veiculo:  <input type="text" id="proprietario" class="input4" /><br><br>
+                </div>
+                <button class="botaoregistro" onclick="cadastrar()">Registrar</button>
+    </div>
+    <script th:src="@{/js/hello.js}"></script>
+</body>
+</html>
